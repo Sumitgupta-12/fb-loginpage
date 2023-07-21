@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>indexof() method</title>
+    <script>
+      let fruits = ["10", "banana", "mango", "grapes", "10", "guava"];
+      let result = fruits.indexOf("apple");
+      document.write(`index of apple=${result}<br>`);
+      result = fruits.indexOf("mango");
+      document.write(`index of mango=${result}<br>`);
+      result = fruits.indexOf("10", 1); //value and starting index
+      document.write(`index of 10=${result}<br>`);
+    </script>
+  </head>
+  <body></body>
+</html>

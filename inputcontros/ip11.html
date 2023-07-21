@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form
+      method="get"
+      action="jsp.js"
+      enctype="application/x-www-form-urlencoded"
+    >
+      First Name:<input type="text" size="25" /><br />
+      Last Name:<input type="text" size="25" /><br />
+      Mobile No:<input type="text" maxlength="10" /><br />
+      Country:<select name="region">
+        <optgroup label="country" multiple aria-setsize="1">
+          <option value="ind">india</option>
+          <option>Us</option>
+          <option value="jp">japan</option>
+          <option>china</option>
+          <optgroup label="other country" >
+            <option> russia</option>
+            <option>iran</option>
+            <option>afganistan</option>
+          </optgroup>
+        </optgroup>
+      </select>
+      <br />
+      <input type="submit" value="Login" />
+      <input type="reset" value="Clear All" />
+    </form>
+</body>
+</html>

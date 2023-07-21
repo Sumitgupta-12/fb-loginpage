@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>remove occurance of element in array</title>
+    <script>
+      var arr = [];
+      var count = 0;
+      for (i = 1; i <= 5; i++) {
+        arr.push(Number(prompt("enter number")));
+      }
+      x = prompt("enter another number");
+      x = Number(x);
+      document.write(`before  removing occurance array is=${arr}<br>`);
+      for (var j in arr) {
+        if (x == arr[j]) {
+          arr.splice(j, j + 1);
+        }
+      }
+      document.write(`before  removing occurance array is=${arr}`);
+    </script>
+  </head>
+  <body></body>
+</html>

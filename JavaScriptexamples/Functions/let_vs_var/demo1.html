@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>let vs var with scope</title>
+    <script>
+      var a = 10;
+      function test() {
+        if (a <= 10) {
+          var b = 10;
+          let c = 11;
+          document.write(`inside the block b is=${b}<br>`);
+          document.write(`inside the block c is=${c}<br>`);
+        }
+        document.write(`outside the block b is=${b}<br>`);
+        document.write(`outside the block c is=${c}`);
+      }
+      test();
+    </script>
+  </head>
+  <body></body>
+</html>

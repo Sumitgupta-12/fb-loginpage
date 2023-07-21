@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>also assign function/methods</title>
+    <script>
+      let mycar = new Object();
+      mycar["compony"] = "maruti";
+      mycar["name"] = "baleno";
+      mycar["year"] = 2018;
+      mycar["start"] = function () {
+        console.log("starting the car..... ");
+      };
+      console.log("details of my car");
+      for (let key in mycar) {
+        console.log(mycar[key]);
+      }
+      console.log(mycar.start());
+    </script>
+  </head>
+  <body></body>
+</html>

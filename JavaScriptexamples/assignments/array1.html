@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>prime number</title>
+    <script>
+      var n = prompt("enter number");
+      var primes = [];
+      for (i = 1; i <= n; i++) {
+        for (j = 2; j <= n / 2; j++) {
+          if (i % j == 0) {
+            break;
+          } else {
+            primes.push(i);
+            break;
+          }
+        }
+      }
+      document.write(`prime numbers =${primes}`);
+    </script>
+  </head>
+  <body></body>
+</html>

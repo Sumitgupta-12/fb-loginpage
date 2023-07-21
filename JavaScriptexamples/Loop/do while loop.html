@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>do while loop</title>
+    <script>
+      var sum = 0,
+        avg = 0;
+      var i = 1;
+
+      do {
+        n = prompt("enter a number and enter 0 to exit");
+        n = Number(n);
+        sum += n;
+        avg = sum / i;
+        i++;
+      } while (n != 0);
+      document.write(`sum is ${sum} and average is ${avg}<br>`);
+    </script>
+  </head>
+  <body></body>
+</html>

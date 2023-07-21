@@ -1,0 +1,130 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>job form</title>
+  </head>
+  <body bgcolor="lightblue"></body>
+  <h1 align="center">Job Application Form</h1>
+  <hr />
+  <form>
+    <table width="50%" cellspacing="20" align="center" border="0">
+      <tr>
+        <td>
+          <label for="fn"><b>Full Name</b> </label>
+        </td>
+        <td>
+          <input type="text" id="fn" size="50" placeholder="Enter Your Name"
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="jb"><b>Job title</b> </label>
+        </td>
+        <td>
+          <input type="text" id="jb" size="50" placeholder="Enter job title"
+        </td>
+      </tr>
+      <tr>
+        <td><lable for="cc"><b>Current Compony</b> </label></td>
+        <td>
+          <input
+            type="text"
+            id="cc"
+            size="50"
+            placeholder="Enter Your Compony name"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="cn"><b>Contact Number</b> </label></td>
+
+        <td>
+          <select i>
+            <option>+91</option>
+            <option>+92</option>
+            <option>+82</option>
+            <option>+70</option>
+          </select>
+          <input type="text" id="cn" size="42" placeholder="Enter Your Number"
+        </td>
+      </tr>
+      <tr>
+        <td><label for="em"><b>Email </b></label></td>
+        <td>
+          <input
+            type="email"
+            id="em"
+            size="50"
+            placeholder="Enter your Email"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="ws"><b>Work Status</b></label></td>
+        <td>
+          <input type="radio" id="ws" value="Full time" />Full time
+          <input type="radio" id="ws" value="Part time" />Part time
+          <input type="radio" id="ws" value="per dim" />per dim
+          <input type="radio" id="ws" value="Other" />Others
+        </td>
+      </tr>
+      <tr>
+        <td><label for="s"><b>Salary</b> </label></td>
+        <td>
+          <input type="text" id="s" size="26" placeholder="Salary" />
+          <select>
+            <option>Rupees</option>
+            <option>Doller</option>
+            <option>Pound</option>
+            <option>Euro</option>
+          </select>
+          <select>
+            <option>yearly</option>
+            <option>monthly</option>
+            <option>per day</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="e"><b>Experience </b></label></td>
+        <td>
+          <input
+            size="50"
+            type="text"
+            id="e"
+            placeholder="Enter your Experience in month"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="cl"><b>Current Location</b> </label></td>
+        <td>
+          <input
+            type="text"
+            id="cl"
+            size="50"
+            placeholder="Enter Your Current Location"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="pa"><b>Permanent Address </b></label></td>
+        <td><textarea rows="6" cols="41" id="pa"></textarea></td>
+      </tr>
+      <tr>
+        <td><label for="f"><b>Upload Resume</b> </label></td>
+        <td>
+          <input type="file" id="f" />
+        </td>
+      </tr>
+      <tfoot>
+        <tr>
+          <td align="center"><input type="submit" /></td>
+          <td align="center"><input type="reset" /></td>
+        </tr>
+      </tfoot>
+    </table>
+  </form>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>object contain function and object</title>
+    <script>
+      let mycar = {
+        compony: "maruti",
+        name: "baleno",
+        year: 2018,
+        stereo: { name: "kenwood", maxval: 30 },
+        printall: function () {
+          console.log(
+            mycar.compony +
+              "," +
+              mycar.year +
+              "," +
+              mycar.name +
+              "," +
+              mycar.stereo.name
+          );
+        },
+      };
+      mycar.printall();
+    </script>
+  </head>
+  <body></body>
+</html>

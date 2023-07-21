@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eligibility checking</title>
+    <script>
+      var y = prompt("enter birth year");
+      y = Number(y);
+      age = 2023 - y;
+      do {
+        if (age < 1) {
+          y = prompt("try agin! you enter a wrong birth year");
+          y = Number(y);
+          age = 2023 - y;
+        }
+      } while (y > 2023 || age < 1);
+      document.write(`age is ${age}<br>`);
+      if (age > 17) {
+        document.write("you are eligible for voting");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
